@@ -6,20 +6,20 @@ function index()
 		return
 	end
                   
-        entry({"admin", "vpn", "vnt"}, alias("admin", "vpn", "vnt", "vnt"),_("VNT"), 44).dependent = true
-	entry({"admin", "vpn", "vnt", "vnt"}, cbi("vnt"),_("VNT"), 45).leaf = true
-	entry({"admin", "vpn",  "vnt",  "vnt_log"}, form("vnt_log"),_("客户端日志"), 46).leaf = true
-	entry({"admin", "vpn", "vnt", "get_log"}, call("get_log")).leaf = true
-	entry({"admin", "vpn", "vnt", "clear_log"}, call("clear_log")).leaf = true
-	entry({"admin", "vpn", "vnt", "vnt_log2"}, form("vnt_log2"),_("服务端日志"), 47).leaf = true
-	entry({"admin", "vpn", "vnt", "get_log2"}, call("get_log2")).leaf = true
-	entry({"admin", "vpn", "vnt", "clear_log2"}, call("clear_log2")).leaf = true
-	entry({"admin", "vpn", "vnt", "status"}, call("act_status")).leaf = true
-	entry({"admin", "vpn", "vnt", "vnt_info"}, call("vnt_info")).leaf = true
-        entry({"admin", "vpn", "vnt", "vnt_all"}, call("vnt_all")).leaf = true
-        entry({"admin", "vpn", "vnt", "vnt_list"}, call("vnt_list")).leaf = true
-        entry({"admin", "vpn", "vnt", "vnt_route"}, call("vnt_route")).leaf = true
-        entry({"admin", "vpn", "vnt", "vnt_cmd"}, call("vnt_cmd")).leaf = true
+        entry({"admin", "zt", "vnt"}, alias("admin", "zt", "vnt", "vnt"),_("VNT"), 94).dependent = true
+	entry({"admin", "zt", "vnt", "vnt"}, cbi("vnt"),_("VNT"), 45).leaf = true
+	entry({"admin", "zt",  "vnt",  "vnt_log"}, form("vnt_log"),_("客户端日志"), 96).leaf = true
+	entry({"admin", "zt", "vnt", "get_log"}, call("get_log")).leaf = true
+	entry({"admin", "zt", "vnt", "clear_log"}, call("clear_log")).leaf = true
+	entry({"admin", "zt", "vnt", "vnt_log2"}, form("vnt_log2"),_("服务端日志"), 97).leaf = true
+	entry({"admin", "zt", "vnt", "get_log2"}, call("get_log2")).leaf = true
+	entry({"admin", "zt", "vnt", "clear_log2"}, call("clear_log2")).leaf = true
+	entry({"admin", "zt", "vnt", "status"}, call("act_status")).leaf = true
+	entry({"admin", "zt", "vnt", "vnt_info"}, call("vnt_info")).leaf = true
+        entry({"admin", "zt", "vnt", "vnt_all"}, call("vnt_all")).leaf = true
+        entry({"admin", "zt", "vnt", "vnt_list"}, call("vnt_list")).leaf = true
+        entry({"admin", "zt", "vnt", "vnt_route"}, call("vnt_route")).leaf = true
+        entry({"admin", "zt", "vnt", "vnt_cmd"}, call("vnt_cmd")).leaf = true
 end
 
 function act_status()
